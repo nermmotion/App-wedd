@@ -1,0 +1,45 @@
+.text-carousel h6,
+.text-carousel h6 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.text-carousel h2,
+.text-carousel h2,
+.text-carousel h2 b,
+.text-carousel h2 b {
+    font-family: 'Alex Brush', cursive;
+    font-weight: 400;
+    /* margin: 0 0 15px 0; */
+    font-size: 120px;
+    color: #FFF;
+    display: block;
+    line-height: .7em;
+    position: relative;
+    
+}
+.text-carousel p {
+    margin-bottom: 0;
+}
+.carousel-inner {
+    width: 104% !important;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .oliven-hero {
+        width: 200% !important;
+    }
+    .carousel-inner {
+        right: 170px !important;
+    }
+}

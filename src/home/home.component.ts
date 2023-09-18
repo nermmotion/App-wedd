@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  
+  slider1: string = 'url("../assets/images/slider.jpg")';
+  slider2: string = 'url("../assets/images/slider2.jpg")';
+  slider3: string = 'url("../assets/images/slider3.jpg")';
+  
+  imagenFondo2: string = 'url("../assets/images/banner-3.jpg")';
 
+  
 }

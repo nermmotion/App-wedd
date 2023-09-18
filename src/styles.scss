@@ -1,11 +1,34 @@
-@import url(../src/assets/css/animate.css);
-@import url(../src/assets/css/bootstrap.min.css);
-@import url(../src/assets/css/flexslider.css);
-@import url(../src/assets/css/magnific-popup.css);
-@import url(../src/assets/css/owl.carousel.min.css);
-@import url(../src/assets/css/owl.theme.default.min.css);
-@import url(../src/assets/css/themify-icons.css);
-@import url(../src/assets/css/style.css);
+/* ----------------------------------------------------------------
+[Table of contents]
+
+01. Google Fonts
+02. Default style
+03. Scrollbar
+04. Selection
+05. Owl Carousel custom style
+06. Sidebar style
+07. Main style
+08. Navigation style
+09. Slider style
+10. Title style
+11. Bride & Groom style
+12. Wedding Countdown style
+13. Our Story style
+14. Friends style
+15. Organization style
+16. See You style
+17. Gallery style
+18. Gift Registry style
+19. When & Where style
+20. Gift style
+21. Button style
+22. Blog & Post style
+23. Footer style
+24. Media Query style
+
+------------------------------------------------------------------- */
+
+
 /* ===== Google Fonts ===== */
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
@@ -972,6 +995,16 @@ body.offcanvason .oliven-nav-toggle {
 .oliven-hero .flexslider .slider-text > .slider-text-inner p {
     margin-bottom: 0;
 }
+
+.image-carousel {
+    position: relative;
+}
+
+.text-carousel {
+    position: absolute;
+    z-index: 2;
+}
+
 @media screen and (max-width: 768px) {
     .oliven-hero .flexslider .slider-text > .slider-text-inner {
         text-align: center;
