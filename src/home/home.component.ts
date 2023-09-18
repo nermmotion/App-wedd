@@ -13,5 +13,11 @@ export class HomeComponent {
   
   imagenFondo2: string = 'url("../assets/images/banner-3.jpg")';
 
+  /* Menu icon transition */
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
   
 }

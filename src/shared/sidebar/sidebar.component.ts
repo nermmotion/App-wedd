@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
+  /* Menu icon transition */
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
 }

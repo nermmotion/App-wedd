@@ -16,4 +16,11 @@ export class AppComponent implements OnInit {
       easing: 'ease',
     });
   }
+
+  /* Menu icon transition */
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

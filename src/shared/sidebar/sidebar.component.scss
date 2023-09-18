@@ -1,0 +1,17 @@
+.offcanvas {
+    background-color: #F6F1F0;
+}
+
+.offcanvas.offcanvas-start {
+    width: 22%;
+}
+
+@media screen and (max-width: 768px) {
+    .offcanvas.offcanvas-start {
+        width: 100%;
+    }
+    #oliven-aside {
+        transform: none !important;
+        width: 100%;
+    }
+}

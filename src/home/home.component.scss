@@ -35,11 +35,23 @@
     align-items: center;
 }
 
+.oliven-nav-toggle {
+    z-index: 999;
+}
+
 @media screen and (max-width: 768px) {
+    .text-carousel h2,
+    .text-carousel h2,
+    .text-carousel h2 b,
+    .text-carousel h2 b {
+        font-size: 60px;
+        line-height: .7em;
+        
+    }
     .oliven-hero {
         width: 200% !important;
     }
     .carousel-inner {
-        right: 170px !important;
+        right: 215px !important;
     }
 }
