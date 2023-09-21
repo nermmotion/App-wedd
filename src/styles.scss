@@ -877,10 +877,10 @@ body.offcanvason .oliven-nav-toggle {
     overflow: hidden;
 }
 .oliven-hero .flexslider .slides li {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    position: relative;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: bottom center !important;
+    position: relative !important;
     min-height: 550px;
 }
 

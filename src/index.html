@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Karina & Nahum Wedding Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="../src/assets/images/favicon.png"/>
 
-    <link rel="stylesheet" type="text/css" href="../node_modules/flexslider/flexslider.css">
-    <script src="src/assets/js/main.js"></script>
-    
-  </head>
-  <body>
-    <app-root></app-root>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Karina & Nahum Wedding Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="../src/assets/images/favicon.png" />
 
-    <script src="../node_modules/flexslider/jquery.flexslider-min.js"></script>
-    <script src="../node_modules/flexslider/jquery.flexslider.js"></script>
-    
-    <script>
-      // Countdown wedding
-  (function () {
-  const second = 1000,
+  <script src="src/assets/js/main.js"></script>
+
+</head>
+
+<body>
+  <app-root></app-root>
+
+  <!-- FlexSlider Script -->
+    <!-- Src Script -->
+    <script src="src/assets/js/jquery.flexslider-min.js"></script>
+
+  <link rel="stylesheet" href="flexslider.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="jquery.flexslider.js"></script>
+  <script>
+    // Can also be used with $(document).ready()
+    $(window).load(function () {
+      $('.flexslider').flexslider({
+        animation: "fade"
+      });
+    });
+  </script>
+
+  <!-- CounterDown Script -->
+  <script>
+    // Countdown wedding
+    (function () {
+      const second = 1000,
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
-  let birthday = "March 10, 2024 00:00:00",
-      countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
-        let now = new Date().getTime(),
+      let birthday = "March 10, 2024 00:00:00",
+        countDown = new Date(birthday).getTime(),
+        x = setInterval(function () {
+          let now = new Date().getTime(),
             distance = countDown - now;
 
           document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-        //do something later when date is reached
-        if (distance < 0) {
-          let headline = document.getElementById("headline"),
+          //do something later when date is reached
+          if (distance < 0) {
+            let headline = document.getElementById("headline"),
               countdown = document.getElementById("countdown"),
               content = document.getElementById("content");
 
-          headline.innerText = "It's our wedding!";
-          countdown.style.display = "none";
-          content.style.display = "block";
+            headline.innerText = "It's our wedding!";
+            countdown.style.display = "none";
+            content.style.display = "block";
 
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
-  }());
+            clearInterval(x);
+          }
+          //seconds
+        }, 0)
+    }());
   </script>
 
-  </body>
+</body>
+
 </html>

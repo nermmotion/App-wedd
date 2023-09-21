@@ -1,9 +1,41 @@
 <!-- Sidebar Section -->
-<aside id="oliven-aside" class="d-none d-lg-block">
-  <!-- Logo -->
+<!-- <aside id="oliven-aside" class="d-none d-lg-block">
+
   <div class="oliven-logo">
     <a href="index.html">
       <img src="images/logo.png" alt="" />
+      <span>Karina <small>&</small> Nahum</span>
+      <h6>10.03.2024</h6>
+    </a>
+  </div>
+
+  <nav class="oliven-main-menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#couple">Couple</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#friends">Friends</a></li>
+      <li><a href="#organization">Organization</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#whenwhere">When & Where</a></li>
+      <li><a href="#rsvp">R.S.V.P</a></li>
+      <li><a href="#gift">Gift Registry</a></li>
+
+    </ul>
+  </nav>
+
+  <div class="footer1">
+    <span class="separator"></span>
+    <p>Boda - Karina & Nahum<br />10 Marzo 2024, Hermosillo, Son.</p>
+  </div>
+</aside> -->
+
+<!-- Sidebar Section -->
+<aside id="oliven-aside">
+  <!-- Logo -->
+  <div class="oliven-logo">
+    <a href="index.html">
+      <img src="../assets/images/logo.png" alt="Logo Site" />
       <span>Karina <small>&</small> Nahum</span>
       <h6>10.03.2024</h6>
     </a>
@@ -20,7 +52,6 @@
       <li><a href="#whenwhere">When & Where</a></li>
       <li><a href="#rsvp">R.S.V.P</a></li>
       <li><a href="#gift">Gift Registry</a></li>
-      <!-- <li><a href="blog.html">Blog</a></li> -->
     </ul>
   </nav>
   <!-- Sidebar Footer -->
@@ -29,53 +60,3 @@
     <p>Boda - Karina & Nahum<br />10 Marzo 2024, Hermosillo, Son.</p>
   </div>
 </aside>
-
-<!-- Mobile -->
-<div class="offcanvas offcanvas-start"
-    [ngClass]="{
-    '': !isMenuOpen,
-    show: isMenuOpen}"
-    data-bs-scroll="true"
-    data-bs-backdrop="false"
-    tabindex="-1"
-    id="offcanvasScrolling"
-    aria-labelledby="offcanvasScrollingLabel">
-  <div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-      Close
-      <i class="bi bi-x"></i>
-    </button>
-  </div>
-  <div class="offcanvas-body"
-      id="oliven-aside">
-      <!-- Logo -->
-      <div class="oliven-logo">
-        <a href="index.html"
-          (click)="toggleMenu()">
-          <img src="images/logo.png" alt="" />
-          <span>Karina <small>&</small> Nahum</span>
-          <h6>10.03.2024</h6>
-        </a>
-      </div>
-      <!-- Menu -->
-      <nav class="oliven-main-menu">
-        <ul>
-          <li><a class="fs-3" (click)="toggleMenu()" href="#home">Home</a></li>
-          <li><a class="fs-3" (click)="toggleMenu()" href="#couple">Couple</a></li>
-          <li><a class="fs-3" (click)="toggleMenu()" href="#story">Our Story</a></li>
-          <li><a class="fs-3" (click)="toggleMenu()" href="#friends">Friends</a></li>
-          <li><a class="fs-3" (click)="toggleMenu()" href="#organization">Organization</a></li>
-          <li><a class="fs-3" (click)="toggleMenu()" href="#gallery">Gallery</a></li>
-          <li><a class="fs-3" (click)="toggleMenu()" href="#whenwhere">When & Where</a></li>
-          <li><a class="fs-3" (click)="toggleMenu()" href="#rsvp">R.S.V.P</a></li>
-          <li><a class="fs-3" (click)="toggleMenu()" href="#gift">Gift Registry</a></li>
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-        </ul>
-      </nav>
-      <!-- Sidebar Footer -->
-      <div class="footer1">
-        <span class="separator"></span>
-        <p>Boda - Karina & Nahum<br />10 Marzo 2024, Hermosillo, Son.</p>
-      </div>
-  </div>
-</div>

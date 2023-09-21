@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   
-  slider1: string = 'url("../assets/images/slider.jpg")';
-  slider2: string = 'url("../assets/images/slider2.jpg")';
-  slider3: string = 'url("../assets/images/slider3.jpg")';
+  slider1: any = 'url("../assets/images/slider.jpg")';
+  slider2: any = 'url("../assets/images/slider2.jpg")';
+  slider3: any = 'url("../assets/images/slider3.jpg")';
   
-  imagenFondo2: string = 'url("../assets/images/banner-3.jpg")';
+  imagenFondo2: any = 'url("../assets/images/banner-5.jpg")';
 
   /* Menu icon transition */
   isMenuOpen = false;
