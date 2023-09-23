@@ -1,30 +1,12 @@
 <!-- Preloader -->
-<!-- <div class="preloader">
+<div class="preloader" *ngIf="loadingPage">
   <div class="lds-heart">
     <div></div>
   </div>
-</div> -->
+</div>
 <!-- Main -->
 <div id="oliven-page">
   <a href="#" class="js-oliven-nav-toggle oliven-nav-toggle"><i></i></a>
-  <!-- <a class="oliven-nav-toggle">
-    <button
-      class="navbar-toggler"
-      (click)="toggleMenu()"
-      role="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasScrolling"
-      aria-controls="offcanvasScrolling"
-      type="button">
-      <i
-      class="bi"
-      [ngClass]="{
-        'bi-list-nested': !isMenuOpen,
-        'bi-x': isMenuOpen
-      }">
-      </i>
-    </button>
-  </a> -->
   <!-- Content Section -->
   <div id="oliven-main">
     <!-- Slider -->
@@ -585,31 +567,31 @@
     <!-- Gift Registry -->
     <div id="gift" class="gift-section gift">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-3 mb-30">
             <br />
             <span class="oliven-title-meta">Gift</span>
             <h2 class="oliven-title">Gift Registry</h2>
           </div>
           <div class="col-md-9">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme d-flex flex-column flex-lg-row" id="owl-demo">
               <div class="client-logo">
-                <a href="#"><img src="../assets/images/gift/1.jpg" alt="" /></a>
+                <a href="#"><img src="../assets/images/gift/1.jpg" alt="gift-1" /></a>
               </div>
               <div class="client-logo">
-                <a href="#"><img src="../assets/images/gift/2.jpg" alt="" /></a>
+                <a href="#"><img src="../assets/images/gift/2.jpg" alt="gift-2" /></a>
               </div>
               <div class="client-logo">
-                <a href="#"><img src="../assets/images/gift/3.jpg" alt="" /></a>
+                <a href="#"><img src="../assets/images/gift/3.jpg" alt="gift-3" /></a>
               </div>
               <div class="client-logo">
-                <a href="#"><img src="../assets/images/gift/4.jpg" alt="" /></a>
+                <a href="#"><img src="../assets/images/gift/4.jpg" alt="gift-4" /></a>
               </div>
               <div class="client-logo">
-                <a href="#"><img src="../assets/images/gift/5.jpg" alt="" /></a>
+                <a href="#"><img src="../assets/images/gift/5.jpg" alt="gift-5" /></a>
               </div>
               <div class="client-logo">
-                <a href="#"><img src="../assets/images/gift/6.jpg" alt="" /></a>
+                <a href="#"><img src="../assets/images/gift/6.jpg" alt="gift-6" /></a>
               </div>
             </div>
           </div>

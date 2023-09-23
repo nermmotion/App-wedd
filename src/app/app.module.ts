@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from 'src/home/home.module';
 import { SharedModule } from 'src/shared/shared.module';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { SharedModule } from 'src/shared/shared.module';
   ],
   imports: [
     BrowserModule,
+    CarouselModule,
     AppRoutingModule,
     HomeModule,
     SharedModule

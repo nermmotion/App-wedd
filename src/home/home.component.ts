@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
+  public loadingPage: boolean;
+  
+  constructor () {
+    this.loadingPage = true;
+  }
   
   slider1: any = 'url("../assets/images/slider.jpg")';
   slider2: any = 'url("../assets/images/slider2.jpg")';
