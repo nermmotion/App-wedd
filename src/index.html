@@ -18,7 +18,6 @@
 
   <!-- CounterDown Script -->
   <script>
-    // Countdown wedding
     (function () {
       const second = 1000,
         minute = second * 60,
@@ -30,10 +29,10 @@
           let now = new Date().getTime(),
             distance = countDown - now;
 
-          document.getElementById("days").innerText = Math.floor(distance / (day)),
-            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+          document.getElementById("days").textContent = Math.floor(distance / (day)),
+            document.getElementById("hours").textContent = Math.floor((distance % (day)) / (hour)),
+            document.getElementById("minutes").textContent = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById("seconds").textContent = Math.floor((distance % (minute)) / second);
 
           //do something later when date is reached
           if (distance < 0) {
@@ -41,7 +40,7 @@
               countdown = document.getElementById("countdown"),
               content = document.getElementById("content");
 
-            headline.innerText = "It's our wedding!";
+            headline.textContent = "It's our wedding!";
             countdown.style.display = "none";
             content.style.display = "block";
 
@@ -50,6 +49,24 @@
           //seconds
         }, 0)
     }());
+  </script>
+
+  <!-- Galería de fotos -->
+  <script>
+    function filtrar(categoria) {
+      const imagenes = document.querySelectorAll('.gallery-item');
+
+      imagenes.forEach((imagen) => {
+        if (categoria === 'all' || imagen.classList.contains(categoria)) {
+          imagen.style.display = 'block';
+        } else {
+          imagen.style.display = 'none';
+        }
+      });
+    }
+
+    // Inicialmente, muestra todas las imágenes
+    filtrar('all');
   </script>
 
 </body>

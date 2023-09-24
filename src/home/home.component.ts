@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  public loadingPage: boolean;
+  public loadingPage: boolean = true;
   
   constructor () {
-    this.loadingPage = true;
     this.loadingPage = false;
   }
   
