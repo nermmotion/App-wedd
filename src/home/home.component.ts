@@ -11,6 +11,7 @@ export class HomeComponent {
   
   constructor () {
     this.loadingPage = true;
+    this.loadingPage = false;
   }
   
   slider1: any = 'url("../assets/images/slider.jpg")';
