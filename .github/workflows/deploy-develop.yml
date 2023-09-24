@@ -24,5 +24,6 @@ jobs:
             local-dir: dist/wedding-app/
             server: ${{ secrets.FTP_HOST_URL }}
             server-dir: ${{ secrets.FTP_HOST_SUBDOMAIN }}/
+            dangerous-clean-slate: true
             username: ${{ secrets.FTP_USER_NAME }}
             password: ${{ secrets.FTP_USER_PASSWORD }}
